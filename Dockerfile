@@ -3,7 +3,8 @@ FROM ubuntu:18.04
 # Running few commands to update the ubuntu container
 RUN apt-get update -y; \
     apt-get install curl -y; \
-    apt-get install jq -y
+    apt-get install jq -y; \
+    apt-get install dos2unix -y
 
 # Taking the dynamic environment variables for mac_id and API
 ENV mac_id=44:38:39:ff:ef:57  
@@ -14,8 +15,6 @@ COPY api-mac.sh /tmp/api-mac.sh
 COPY api-secert.env /tmp/api-secerts.env
 
 # Give permission to execute and run the code
+RUN dos2unix /tmp/api-mac.sh
 RUN chmod +x /tmp/api-mac.sh
-
-CMD [/tmp/api-mac.sh]
-ENTRYPOINT /bin/bash
 
