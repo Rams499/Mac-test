@@ -17,6 +17,7 @@ docker run --rm --env mac_id=00:00:00:a1:2b:cc [image-name] /tmp/api-mac.sh
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   650  100   650    0     0    719      0 --:--:-- --:--:-- --:--:--   719
+
 Mac address - 44:38:39:ff:ef:57 is associated with Company - "Cumulus Networks, Inc"
 
 ➜  test docker run --rm --env mac_id=00:00:00:a1:2b:cc myimage /tmp/api-mac.sh
@@ -24,6 +25,7 @@ Mac address - 44:38:39:ff:ef:57 is associated with Company - "Cumulus Networks, 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   682  100   682    0     0    797      0 --:--:-- --:--:-- --:--:--   796
+
 Mac address - 00:00:00:a1:2b:cc is associated with Company - "Xerox Corp"
 
 # steps to execute in local
@@ -39,4 +41,5 @@ Clone the git code and uncomment the mentioned code and execute the below comman
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   682  100   682    0     0    773      0 --:--:-- --:--:-- --:--:--   772
+
 Mac address - 00:00:00:a1:2b:cc is associated with Company - "Xerox Corp"
