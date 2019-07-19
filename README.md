@@ -13,11 +13,14 @@ docker run --rm --env mac_id=00:00:00:a1:2b:cc [image-name] /tmp/api-mac.sh
 # Sample Output while running docker commands
 
 ➜  test docker run --rm myimage /tmp/api-mac.sh
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   650  100   650    0     0    719      0 --:--:-- --:--:-- --:--:--   719
 Mac address - 44:38:39:ff:ef:57 is associated with Company - "Cumulus Networks, Inc"
+
 ➜  test docker run --rm --env mac_id=00:00:00:a1:2b:cc myimage /tmp/api-mac.sh
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   682  100   682    0     0    797      0 --:--:-- --:--:-- --:--:--   796
@@ -32,6 +35,7 @@ Clone the git code and uncomment the mentioned code and execute the below comman
 # sample Output while running locally
 
 ➜  test ./api-mac.sh 00:00:00:a1:2b:cc
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   682  100   682    0     0    773      0 --:--:-- --:--:-- --:--:--   772
